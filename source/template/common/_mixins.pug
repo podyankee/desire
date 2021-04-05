@@ -21,6 +21,10 @@ mixin icon(name, mod)
 		svg(class="icon icon-" + name + ' ' + mod)
 				use(xlink:href="assets/img/sprite.svg#" + name)
 
+//- Image
+mixin img(image, className, alt)
+	img(src="assets/img/" + image,class= className  alt= alt)
+
 mixin footerNavLink(title)
 		li.footer-nav__item
 				a(href="#").footer-nav__link= title
@@ -35,7 +39,6 @@ mixin tabsLink(dataShow, text)
 mixin brandsItem(title)
 		li.filter-brands__item
 				label.checkbox
-
 						| #{title}
 						input(type="checkbox")
 						span.checkbox-custom
