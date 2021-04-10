@@ -1,0 +1,59 @@
+.work-path
+	padding: 80px 0 30px
+	&__title
+		+title
+		text-align: center
+		margin-bottom: 40px
+		font-size: 36px
+		line-height: 51px
+	&__items-box
+		display: flex
+		align-items: flex-end
+		border-bottom: 2px solid rgba($dark-color, 0.7 )
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: -5px
+			left: 0
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: $dark-color
+	&__item
+		width: 250px
+		height: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		position: relative
+	&__item--production
+		margin-left: 317px
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 20px
+			width: 2px
+			background: rgba($dark-color, 0.7)
+	&__item--production, &__item--consultation
+		padding-bottom: 38px
+	&__item--measuring
+		padding-top: 38px
+		margin-left: 305px
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			height: 20px
+			width: 2px
+			background: rgba($dark-color, 0.7)
+	&__item-title
+		font-size: 16px
+		+title
+		color: $dark-color
+		margin-left: 10px
+	&__item-text
+		margin-top: 13px
