@@ -1,12 +1,13 @@
 header.header
 	.container
 		.header__inner
-			nav.menu
-				ul.menu__list
-					li.menu__list-item
-						a(class="menu__list-link" href="#") About
-					li.menu__list-item
-						a(class="menu__list-link" href="#") Gallery
+			+menu('menu', [{
+    'title': 'About',
+    'url':'about.html'
+    }, {
+    'title': 'Gallery',
+    'url': 'gallery.html'
+    }], 0 )
 			a(href="#").logo
 				img(src="assets/img/logo.png", alt="logo")
 			nav.menu
@@ -18,4 +19,3 @@ header.header
 			button.header__btn
 				+img('icons/icon-menu.svg','' , 'icon menu')
 			include ../elements/_rightside-menu
-
