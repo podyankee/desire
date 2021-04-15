@@ -1,11 +1,11 @@
 //- nav menu mixin
-mixin menu(className, items, activeItem)
-	nav(class=className)
-		ul(class=className + "__list")
-				each menuItem, ndx in items
-					li(class=className +"__item " + ((ndx == activeItem) ? className +"__item_active" : '' ))
-						a(href= `${menuItem.url}`, class=className +"__link")
-							|#{menuItem.title}
+//- mixin menu(className, items, activeItem)
+//- 	nav(class=className)
+//- 		ul(class=className + "__list")
+//- 				each menuItem, ndx in items
+//- 					li(class=className +"__item " + ((ndx == activeItem) ? className +"__item_active" : '' ))
+//- 						a(href= `${menuItem.url}`, class=className +"__link")
+//- 							|#{menuItem.title}
 mixin menu-icon(className, items, activeItem, icon)
 	nav(class=className)
 		ul(class=className + "__list")
@@ -44,6 +44,20 @@ mixin brandsItem(title)
 						span.checkbox-custom
 								+icon('check')
 
+mixin breadcrumbs(pageLink)
+	.breadcrumbs
+		.container
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a(href="#").breadcrumbs__link Home
+				li.breadcrumbs__item
+					a(href="#").breadcrumbs__link #{pageLink}
 
 
-
+mixin menu(className, items, activeItem)
+	nav(class=className)
+		ul(class=className + "__list")
+				each menuItem, ndx in items
+					li(class=className +"__list-item ")
+						a(href= `${menuItem.url}`,class=className +"__list-link " + ((ndx == activeItem) ? className +"__list-link--active" : '' ))
+							|#{menuItem.title}
