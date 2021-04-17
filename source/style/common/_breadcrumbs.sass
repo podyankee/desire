@@ -1,6 +1,8 @@
 .breadcrumbs
 	background: rgba(#dfdfdf, 0.5)
 	padding: 13px 14px
+	position: relative
+	z-index: 2
 	&__list
 		display: flex
 		color: #000
@@ -13,3 +15,6 @@
 	&__link
 		font-size: 14px
 		color: $text-color
+.about-main
+	.breadcrumbs
+		background: transparent

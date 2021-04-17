@@ -12,9 +12,11 @@ $(function () {
 		fade: true,
 	});
 
-	var mixer = mixitup('.gallery__inner', {
-		load: {
-			filter: '.living',
-		},
-	});
+	if ('.gallery__inner') {
+		var mixer = mixitup('.gallery__inner', {
+			load: {
+				filter: '.living',
+			},
+		});
+	}
 });

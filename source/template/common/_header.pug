@@ -10,12 +10,13 @@ header.header
     }], 0 )
 			a(href="#").logo
 				img(src="assets/img/logo.png", alt="logo")
-			nav.menu
-				ul.menu__list
-					li.menu__list-item
-						a(class="menu__list-link" href="#") Blog
-					li.menu__list-item
-						a(class="menu__list-link" href="#") Contact
+				+menu('menu', [{
+    'title': 'Blog',
+    'url':'blog.html'
+    }, {
+    'title': 'Contact',
+    'url': 'contact.html'
+    }] )
 			button.header__btn
 				+img('icons/icon-menu.svg','' , 'icon menu')
 			include ../elements/_rightside-menu
