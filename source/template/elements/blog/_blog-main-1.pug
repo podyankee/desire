@@ -1,0 +1,62 @@
+main.main.blog-main
+	+breadcrumbs('Blog')
+	section.blog
+		.container
+			.blog__inner
+				.blog__items
+				.aside
+					form.aside__search
+						input(type="text" placeholder="Search").aside__search-input
+						button(type="submit").aside__search-btn
+							+img('icons/search-icon.svg', '', 'search icon')
+					.blog__category
+						h6.blog__category-title Categories
+						ul.blog__category-list
+							li.blog__category-item
+								a(href="#").blog__category-link Dining room (1)
+							li.blog__category-item
+								a(href="#").blog__category-link Office furniture (12)
+							li.blog__category-item
+								a(href="#").blog__category-link Simple interiror design (2)
+							li.blog__category-item
+								a(href="#").blog__category-link Design (4)
+							li.blog__category-item
+								a(href="#").blog__category-link Bedroom Furniture (1)
+					.recent-posts
+						h6.recent-posts__title Recent Posts
+						ul.recent-posts__list
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-posts__date August 10, 2020 |
+								a(href="#").recent-posts__author by Ann Summers
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+								span.recent-posts__date September 30 ,2020 | by Ann Summers
+								a(href="#").recent-posts__author by Ann Summers
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-posts__date May 2, 2020 |
+								a(href="#").recent-posts__author by Ann Summers
+						.blog__tags
+							h6.blog__tags-title Tags
+							a(href="#").blog__tags-link Dining room futniture
+							a(href="#").blog__tags-link Chair
+							a(href="#").blog__tags-link Table
+							a(href="#").blog__tags-link Bedroom
+							a(href="#").blog__tags-link Office Furniture
+						ul.blog__social
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/facebook.svg', 'blog__social-icon', 'facebook')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/instagram.svg', 'blog__social-icon', 'instagram')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/pinterest.svg', 'blog__social-icon', 'pinterest')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/whatsapp.svg', 'blog__social-icon', 'whatsapp')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/youtube.svg', 'blog__social-icon', 'youtube')

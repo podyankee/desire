@@ -1,0 +1,113 @@
+main.main.blog-main
+	+breadcrumbs('Blog')
+	section.blog
+		.container
+			.blog__inner
+				.blog__items
+					.blog__item
+						+img('blog/big-1.jpg', 'blog-item__img' , 'images')
+						.blog__item-info
+							span.blog__item-date August 15, 2020 &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-author by Ann Summers &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-theme Bedroom Furniture
+							a(href="#").blog__item-link
+								h3.blog__item-title Red selfies edison bulb four dollar toast design humblebrag for the furniture
+							p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+							p.blog__item-text Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+					blockquote.blog__blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+						.blog__blockquote-author Paul Rand
+					.blog__item.article-popup
+						.article-popup__box
+							+img('blog/big-2.jpg','blog-item__img', 'images')
+							a(href="https://youtu.be/pl39pKMf61M", data-fancybox='').blog__item-popup
+								+img('icons/icon-play.svg', 'blog__item-play' , 'play button')
+						.blog__item-info
+							span.blog__item-date August 12, 2020 &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-author by Lux Morningstar &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-theme Design
+						a(href="#").blog__item-link
+							h3.blog__item-title Authentic kogi shabby chic
+					.blog__item.article-slider
+						.article-slider__box
+							+img('blog/big-3.jpg','.article-slider__img', 'images')
+							+img('blog/big-3.jpg','.article-slider__img', 'images')
+							+img('blog/big-3.jpg','.article-slider__img', 'images')
+						.blog__item-info
+							span.blog__item-date August 18, 2020 &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-author by Ann Summers &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-theme Table Furniture
+						a(href="#").blog__item-link
+							h3.blog__item-title Semiotics fixie four dollar toast, next level woke
+						p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+					.pagination
+						a(href="#").pagination__arrow.pagination__arrow--disabled
+							+img('icons/arrow-left.svg','pagination__arrow-icon', 'arrow icon')
+						ul.pagination__list
+							li.pagination__list-item
+								a(href="#").pagination__list-num.pagination__list-num--active 1
+							li.pagination__list-item
+								a(href="#").pagination__list-num 2
+						a(href="#").pagination__arrow
+							+img('icons/arrow-right.svg','pagination__arrow-icon', 'arrow icon')
+				.aside
+					form.aside__search
+						input(type="text" placeholder="Search").aside__search-input
+						button(type="submit").aside__search-btn
+							+img('icons/search-icon.svg', '', 'search icon')
+					.blog__category
+						h6.blog__category-title Categories
+						ul.blog__category-list
+							li.blog__category-item
+								a(href="#").blog__category-link Dining room (1)
+							li.blog__category-item
+								a(href="#").blog__category-link Office furniture (12)
+							li.blog__category-item
+								a(href="#").blog__category-link Simple interiror design (2)
+							li.blog__category-item
+								a(href="#").blog__category-link Design (4)
+							li.blog__category-item
+								a(href="#").blog__category-link Bedroom Furniture (1)
+					.recent-posts
+						h6.recent-posts__title Recent Posts
+						ul.recent-posts__list
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-posts__date August 10, 2020 |
+								a(href="#").recent-posts__author by Ann Summers
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+								span.recent-posts__date September 30 ,2020 | by Ann Summers
+								a(href="#").recent-posts__author by Ann Summers
+							li.recent-posts__item
+								a(href="#").recent-posts__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-posts__date May 2, 2020 |
+								a(href="#").recent-posts__author by Ann Summers
+						.blog__tags
+							h6.blog__tags-title Tags
+							a(href="#").blog__tags-link Dining room futniture
+							a(href="#").blog__tags-link Chair
+							a(href="#").blog__tags-link Table
+							a(href="#").blog__tags-link Bedroom
+							a(href="#").blog__tags-link Office Furniture
+						ul.blog__social
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/facebook.svg', 'blog__social-icon', 'facebook')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/instagram.svg', 'blog__social-icon', 'instagram')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/pinterest.svg', 'blog__social-icon', 'pinterest')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/whatsapp.svg', 'blog__social-icon', 'whatsapp')
+							li.blog__social-item
+								a(href="#").blog__social-link
+									+img('icons/youtube.svg', 'blog__social-icon', 'youtube')

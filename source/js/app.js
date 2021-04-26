@@ -19,6 +19,13 @@ $(function () {
 		arrows: false,
 	});
 
+	$('.article-slider__box').slick({
+		prevArrow:
+			'<button class="article-slider__arrow article-slider__arrow-left"><img src="assets/img/icons/arrow-slider-left.svg" alt="arrow left"></button>',
+		nextArrow:
+			'<button class="article-slider__arrow article-slider__arrow-right"><img src="assets/img/icons/arrow-slider-right.svg" alt="arrow right"></button>',
+	});
+
 	if ('.gallery__inner') {
 		var mixer = mixitup('.gallery__inner', {
 			load: {
