@@ -1,9 +1,54 @@
 main.main.blog-main
 	+breadcrumbs('Blog')
-	section.blog
+	section.blog.blog-one
 		.container
 			.blog__inner
 				.blog__items
+					.blog__item.blog-one__item
+						+img('blog/big-1.jpg', 'blog-item__img' , 'images')
+						.blog__item-info
+							span.blog__item-date August 15, 2020 &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-author by Ann Summers &nbsp;
+							| |&nbsp;
+							a(href="#").blog__item-theme Bedroom Furniture
+							a(href="#").blog__item-link
+								h3.blog__item-title Red selfies edison bulb four dollar toast design humblebrag for the furniture
+							.blog-one__text
+								p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+								p.blog__item-text Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+							blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+								.blog__blockquote-author Paul Rand
+							.blog-one__text
+								p Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+								p Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+					.blog-one__tags
+						h4.blog-one__tags-title Tags
+						a(href="#").blog-one__tags-link Bedroom furniture
+						a(href="#").blog-one__tags-link Office furniture
+						a(href="#").blog-one__tags-link Dining room futniture
+						a(href="#").blog-one__tags-link Chair
+					.blog-one__links
+						a(href="#").blog-one__link.blog-one__link--prev Cred selfies edison bulb four dollar toast humblebrag
+						a(href="#").blog-one__link.blog-one__link--next Semiotics fixie four dollar toast, next level
+					.blog-one__comments
+						h4.blog-one__comments-title Comments
+						.blog-one__comments-item
+							+img('content/avatar.jpg', 'blog-one__comments-avatar', 'avatar')
+							.blog-one__comments-info
+								p.blog-one__comments-name Lea Brown
+								p.blog-one__comments-date August 12, 2020
+								p.blog-one__comments-text Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+							button.blog-one__reply Reply
+					form.blog-one__form
+						h4.blog-one__form-title Post a Comment
+						textarea(placeholder="Your comment").blog-one__form-textarea
+						input(type="text" placeholder="Your name").blog-one__form-input
+						input(type="email" placeholder="Your e-mail").blog-one__form-input
+						label.blog-one__form-label
+							input(type="checkbox").blog-one__form-labelinput
+							|Remember me
+						button(type="submit").blog-one__form-btn Submit
 				.aside
 					form.aside__search
 						input(type="text" placeholder="Search").aside__search-input
